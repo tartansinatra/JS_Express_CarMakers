@@ -1,0 +1,8 @@
+<!-- <a href='cars/new'>New</a> -->
+
+<h1><%= welcome %></h1>
+
+<p> <% for(var i=0; i < carMakers.cars.length; i++) { %>
+ <a href='/cars/<%= i+1 %>'> <%= carMakers.cars[i].name %> </a>
+  Country: <%= carMakers.cars[i].country %></p>
+<% }; %> 
